@@ -1,0 +1,22 @@
+{
+  "name": "handpicked-reports",
+  "version": "1.0.0",
+  "description": "A simple HTML page for displaying handpicked reports",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required for static HTML'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "reports",
+    "html",
+    "static",
+    "vercel"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
