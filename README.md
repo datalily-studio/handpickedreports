@@ -1,48 +1,138 @@
-# Getting Started with Create React App
+# Industry Reports Design Inspiration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A curated collection of the best industry report designs on the web, inspired by modern SaaS design patterns. This project provides a clean, dark-themed interface for browsing and discovering industry report design inspiration.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dark Theme Design**: Modern dark interface with green accent colors
+- **Responsive Layout**: Works perfectly on desktop, tablet, and mobile devices
+- **Interactive Filters**: Filter reports by type, industry, style, format, and year
+- **Random Discovery**: Random button to discover new reports
+- **Email Subscription**: Weekly newsletter signup
+- **Modal Views**: Detailed report information in popup modals
+- **Manual Input**: Easy-to-use functions for adding new reports
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Open `index.html` in your web browser
+2. Browse the sample reports
+3. Use filters to find specific types of reports
+4. Click the "Random" button to discover new designs
+5. Subscribe to the weekly newsletter
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Adding New Reports
 
-### `npm test`
+You can manually add new reports using the JavaScript console or by modifying the `reportsData` array in `script.js`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Using the Console
 
-### `npm run build`
+```javascript
+// Add a new report
+addReport({
+    title: "Your Report Title",
+    industry: "Technology",
+    type: "Annual Report",
+    format: "PDF",
+    year: 2024,
+    style: "Modern",
+    description: "Description of your report",
+    url: "https://your-report-url.com"
+});
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Direct Array Modification
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Edit the `reportsData` array in `script.js`:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```javascript
+const reportsData = [
+    // ... existing reports
+    {
+        id: 7,
+        title: "Your New Report",
+        industry: "Healthcare",
+        type: "Research Report",
+        format: "Interactive",
+        year: 2024,
+        style: "Professional",
+        description: "Your report description",
+        image: "https://your-image-url.com/image.jpg",
+        url: "https://your-report-url.com"
+    }
+];
+```
 
-### `npm run eject`
+## Report Data Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Each report should have the following properties:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `id`: Unique identifier (number)
+- `title`: Report title (string)
+- `industry`: Industry category (string)
+- `type`: Report type (string)
+- `format`: Report format (string)
+- `year`: Publication year (number)
+- `style`: Design style (string)
+- `description`: Report description (string)
+- `image`: Image URL (string, optional)
+- `url`: Report URL (string)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Available Filter Options
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Report Types
+- Annual Report
+- Market Research
+- White Paper
+- Research Report
+- Industry Analysis
+- Case Study
 
-## Learn More
+### Industries
+- Technology
+- Healthcare
+- Finance
+- Energy
+- Retail
+- Manufacturing
+- Education
+- Automotive
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Styles
+- Modern
+- Professional
+- Corporate
+- Creative
+- Technical
+- Minimalist
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Formats
+- PDF
+- Interactive
+- Web
+- Print
+- Video
 
-Andy was here
+## Customization
+
+### Colors
+The main color scheme can be customized in `styles.css`:
+- Background: `#121212`
+- Accent: `#00ff80`
+- Text: `#ffffff`
+
+### Adding New Filter Options
+Edit the `filterOptions` object in `script.js` to add new filter categories or options.
+
+### Styling
+All styles are contained in `styles.css` with clear section comments for easy customization.
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+This project is open source and available under the MIT License.

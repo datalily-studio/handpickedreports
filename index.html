@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Reports - Design Inspiration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="icon-square"></div>
+                    <div class="icon-line"></div>
+                </div>
+                <span class="logo-text">industryreports</span>
+            </div>
+            
+            <nav class="nav">
+                <div class="nav-item">
+                    <span class="nav-number">1,247</span>
+                    <span class="nav-label">Reports</span>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-number">89</span>
+                    <span class="nav-label">Industries</span>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-number">156</span>
+                    <span class="nav-label">Templates</span>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-number">23</span>
+                    <span class="nav-label">Formats</span>
+                </div>
+                <div class="nav-item dropdown">
+                    <span class="nav-label">More</span>
+                    <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </nav>
+            
+            <button class="random-btn">
+                <svg class="random-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Random
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        The best <span class="highlight">industry reports</span> design inspiration
+                    </h1>
+                    <p class="hero-description">
+                        A curated collection of the best industry report designs on the web. Quickly find the design inspiration you're looking for with our <span class="highlight">filters</span>.
+                    </p>
+                    <div class="sponsored-by">
+                        <span class="sponsored-label">Sponsored by:</span>
+                        <div class="sponsor-logos">
+                            <div class="sponsor-logo red">P</div>
+                            <div class="sponsor-logo black">R</div>
+                            <div class="sponsor-logo black">I</div>
+                            <div class="sponsor-logo white">+</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <div class="cta-card">
+                        <h3 class="cta-title">Get the 5 best industry report designs in your inbox each week.</h3>
+                        <p class="cta-subtitle">Join 892+ other designers.</p>
+                        <div class="email-form">
+                            <input type="email" placeholder="Enter your email..." class="email-input">
+                            <button class="subscribe-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="filter-tabs">
+                    <button class="filter-tab active">Reports</button>
+                    <button class="filter-tab">Sections</button>
+                    <button class="filter-tab">Templates</button>
+                </div>
+                
+                <div class="filter-dropdowns">
+                    <div class="filter-dropdown">
+                        <span class="dropdown-label">Report Types</span>
+                        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="filter-dropdown">
+                        <span class="dropdown-label">Industry</span>
+                        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="filter-dropdown">
+                        <span class="dropdown-label">Style</span>
+                        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="filter-dropdown">
+                        <span class="dropdown-label">Format</span>
+                        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="filter-dropdown">
+                        <span class="dropdown-label">Year</span>
+                        <svg class="dropdown-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reports Grid -->
+            <div class="reports-grid" id="reportsGrid">
+                <!-- Reports will be dynamically loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
